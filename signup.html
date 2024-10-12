@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zomato - Sign Up</title>
+    <style>
+        /* Reset some basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f8f8; /* Light background for contrast */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+}
+
+/* Sign Up Container */
+.signup-container {
+    background-color: #fff;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    padding: 40px;
+    width: 400px; /* Fixed width for the form */
+}
+
+/* Sign Up Form Styling */
+.signup-form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Heading */
+.signup-form h1 {
+    text-align: center;
+    color: #e23744; 
+    margin-bottom: 30px;
+}
+
+/* Input Group */
+.input-group {
+    margin-bottom: 20px;
+}
+
+/* Labels */
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+/* Inputs */
+.input-group input {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px; /* Rounded corners */
+    font-size: 1em;
+}
+
+/* Button */
+button {
+    padding: 15px;
+    background-color:#e23744; 
+    color: white;
+    border: none;
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #830b15; 
+}
+/* Footer Links */
+.footer-links {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.footer-links a {
+    color: #e23744; 
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+    </style>
+</head>
+<body>
+    <!-- Sign Up Section -->
+    <div class="signup-container">
+        <div class="signup-form">
+            <h1>Zomato Sign Up</h1>
+            <form action="#" method="post">
+                <div class="input-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" placeholder="Enter your full name" required>
+                </div>
+                <div class="input-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Enter your email" required>
+                </div>
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Create a password" required>
+                </div>
+                <div class="input-group">
+                    <label for="confirm-password">Confirm Password</label>
+                    <input type="password" id="confirm-password" placeholder="Confirm your password" required>
+                </div>
+                <button type="submit">Sign Up</button>
+                <div class="footer-links">
+                    <p>Already have an account? <a href="#">Login</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

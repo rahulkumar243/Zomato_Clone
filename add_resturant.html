@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zomato - Add Restaurant</title>
+    <style>
+        /* Reset basic styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body Styling */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f8f8;
+            color: #333;
+            padding: 20px;
+        }
+
+        /* Header Styling */
+        header {
+            background-color: #e23744;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+        }
+
+        /* Main Content Container */
+        .content-container {
+            margin: 20px auto;
+            padding: 30px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            width: 80%;
+        }
+
+        /* Form Styling */
+        .restaurant-form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Section Headings */
+        .restaurant-form h2 {
+            color: #e23744;
+            font-size: 1.8em;
+            margin-bottom: 20px;
+        }
+
+        /* Input Groups */
+        .input-group {
+            margin-bottom: 20px;
+        }
+
+        .input-group label {
+            display: block;
+            margin-bottom: 8px;
+            color: #333;
+        }
+
+        .input-group input,
+        .input-group select,
+        .input-group textarea {
+            width: 100%;
+            padding: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        /* Button Styling */
+        button {
+            padding: 15px;
+            background-color: #e23744;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #ff5a67;
+        }
+
+        /* Footer Links */
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            padding: 20px;
+            background-color: #e23744;
+            color: white;
+        }
+
+        footer p {
+            font-size: 0.9em;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: underline;
+        }
+
+        footer a:hover {
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Add Your Restaurant to Zomato</h1>
+        <p>Help millions of users discover your restaurant on Zomato.</p>
+    </header>
+
+    <!-- Main Content -->
+    <div class="content-container">
+        <!-- Restaurant Form -->
+        <form class="restaurant-form" action="#" method="post">
+            <h2>Restaurant Information</h2>
+
+            <!-- Restaurant Name -->
+            <div class="input-group">
+                <label for="restaurant-name">Restaurant Name</label>
+                <input type="text" id="restaurant-name" name="restaurant-name" placeholder="Enter your restaurant name" required>
+            </div>
+
+            <!-- Restaurant Address -->
+            <div class="input-group">
+                <label for="restaurant-address">Restaurant Address</label>
+                <textarea id="restaurant-address" name="restaurant-address" rows="3" placeholder="Enter your restaurant address" required></textarea>
+            </div>
+
+            <!-- Contact Information -->
+            <div class="input-group">
+                <label for="restaurant-contact">Contact Number</label>
+                <input type="tel" id="restaurant-contact" name="restaurant-contact" placeholder="Enter your contact number" required>
+            </div>
+
+            <!-- Restaurant Type -->
+            <div class="input-group">
+                <label for="restaurant-type">Type of Cuisine</label>
+                <select id="restaurant-type" name="restaurant-type" required>
+                    <option value="" disabled selected>Select cuisine type</option>
+                    <option value="indian">Indian</option>
+                    <option value="chinese">Chinese</option>
+                    <option value="italian">Italian</option>
+                    <option value="continental">Continental</option>
+                    <option value="mexican">Mexican</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+
+            <!-- Opening Hours -->
+            <div class="input-group">
+                <label for="opening-hours">Opening Hours</label>
+                <input type="text" id="opening-hours" name="opening-hours" placeholder="e.g., 10:00 AM - 11:00 PM" required>
+            </div>
+
+            <!-- Delivery Availability -->
+            <div class="input-group">
+                <label for="delivery-availability">Delivery Available?</label>
+                <select id="delivery-availability" name="delivery-availability" required>
+                    <option value="" disabled selected>Select option</option>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit">Submit Restaurant</button>
+        </form>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Zomato Ltd. | <a href="#">Privacy Policy</a></p>
+    </footer>
+
+</body>
+</html>
